@@ -168,6 +168,17 @@ def test_same_requisition_in_several_locations_is_one_row():
     assert sel.main[0].meta["duplicates"] == [a.id]
 
 
+def test_same_posting_under_two_titles_is_one_row():
+    uid = "d31312c2-236a-45f1-8da7-61a7ca8d1622"
+    a = _ready(job(title="Software Engineer I (Backend, Growth)", company="Whoop", nid="a"), verdict(74))
+    a.url = f"https://jobs.ashbyhq.com/whoop/{uid}"
+    b = _ready(job(title="Software Engineer 1 - Backend - Growth", company="Whoop", nid="b"), verdict(74))
+    b.url = f"https://jobs.ashbyhq.com/whoop/{uid}/application?embed=true"
+    b.source = "simplify"
+    sel = select([b, a])
+    assert [j.url for j in sel.main] == [a.url]
+
+
 def test_reposts_of_digested_roles_are_skipped():
     earlier = _ready(job(nid="old", posted="2026-11-01"), verdict(80), stamp="2026-11-02")
     earlier.digested["us"] = "2026-11-02"

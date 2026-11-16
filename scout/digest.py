@@ -6,6 +6,8 @@ from datetime import date, datetime, timedelta
 from typing import Optional
 from zoneinfo import ZoneInfo
 
+import re
+
 from .models import Job
 from .regions import Region
 from .util import age_days, norm_key
@@ -27,6 +29,25 @@ def dedup_key(job: Job) -> tuple[str, str]:
     return norm_key(job.company), norm_key(job.title)
 
 
+# The board's own posting id inside a link: Ashby/Lever UUIDs, Greenhouse numeric ids,
+# Workday requisition suffixes. Catches one posting listed under two slightly different titles.
+_POSTING_ID = re.compile(r"([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})"
+                         r"|(?:/jobs/|gh_jid=)(\d{5,})"
+                         r"|myworkdayjobs\.com/.*_([A-Za-z]*\d[\w-]*?)(?:[/?#]|$)", re.I)
+
+
+def posting_key(job: Job) -> Optional[tuple[str, str]]:
+    m = _POSTING_ID.search(job.url or "")
+    if not m:
+        return None
+    return norm_key(job.company), next(g for g in m.groups() if g).lower()
+
+
+def _keys(job: Job) -> list[tuple]:
+    pk = posting_key(job)
+    return [dedup_key(job)] + ([pk] if pk else [])
+
+
 def window_days(last_digest: Optional[str], today: date, max_catchup: int) -> int:
     """Normally 'posted today or yesterday'. After missed runs, stretch to cover the gap.
 
@@ -44,9 +65,11 @@ def select(jobs: list[Job], region: Region, today: date, cfg: dict, last_digest:
     d = cfg["digest"]
     sel = Selection(window_days=window_days(last_digest, today, d["max_catchup_days"]))
     horizon = (today - timedelta(days=d["repost_memory_days"])).isoformat()
-    already = {dedup_key(j) for j in jobs if j.digested.get(region.key, "") >= horizon}
+    already = {k for j in jobs if j.digested.get(region.key, "") >= horizon for k in _keys(j)}
 
-    best: dict[tuple, Job] = {}
+    # Each key points at a slot; a posting matching any key of an earlier one joins its slot.
+    slot_of: dict[tuple, int] = {}
+    best: dict[int, Job] = {}
     for j in jobs:
         v = j.verdicts.get(region.key)
         if not v or region.key in j.digested or j.last_seen != run_stamp:
@@ -58,18 +81,22 @@ def select(jobs: list[Job], region: Region, today: date, cfg: dict, last_digest:
         if age is not None and age > sel.window_days and not (
                 age <= d["exceptional_window_days"] and v["fit"] >= d["exceptional_fit"]):
             continue
-        key = dedup_key(j)
-        if key in already:
+        keys = _keys(j)
+        if any(k in already for k in keys):
             continue
-        cur = best.get(key)
-        if cur is None:
-            best[key] = j
+        slot = next((slot_of[k] for k in keys if k in slot_of), None)
+        if slot is None:
+            slot = len(best)
+            best[slot] = j
+            slot_of.update((k, slot) for k in keys)
             continue
+        cur = best[slot]
+        slot_of.update((k, slot) for k in keys)
         # The same requisition listed per location, or via both a list and the employer's board.
         keep, drop = (j, cur) if _prefer(j, cur, region) else (cur, j)
         keep.locations = list(dict.fromkeys(keep.locations + drop.locations))
         keep.meta.setdefault("duplicates", []).append(drop.id)
-        best[key] = keep
+        best[slot] = keep
 
     ranked = sorted(best.values(), key=lambda j: _rank(j, region, today))
     dated = [j for j in ranked if j.posted_at]
