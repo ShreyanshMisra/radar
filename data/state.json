@@ -1,0 +1,1063 @@
+{
+ "health": {
+  "checked": "2026-11-16",
+  "sources": {
+   "Abridge": {
+    "count": 24,
+    "ok": true
+   },
+   "Addepar": {
+    "count": 116,
+    "ok": true
+   },
+   "Adyen": {
+    "count": 245,
+    "ok": true
+   },
+   "Affirm": {
+    "count": 217,
+    "ok": true
+   },
+   "Airbnb": {
+    "count": 206,
+    "ok": true
+   },
+   "Airbyte": {
+    "count": 14,
+    "ok": true
+   },
+   "Airtable": {
+    "count": 9,
+    "ok": true
+   },
+   "Airwallex": {
+    "count": 487,
+    "ok": true
+   },
+   "Akuna Capital": {
+    "count": 32,
+    "ok": true
+   },
+   "Aldar": {
+    "count": 51,
+    "ok": true
+   },
+   "AlixPartners": {
+    "count": 132,
+    "ok": true
+   },
+   "Alloy": {
+    "count": 32,
+    "ok": true
+   },
+   "Amazon": {
+    "count": 566,
+    "ok": true
+   },
+   "Amplitude": {
+    "count": 48,
+    "ok": true
+   },
+   "Anchorage Digital": {
+    "count": 21,
+    "ok": true
+   },
+   "AngelList": {
+    "count": 37,
+    "ok": true
+   },
+   "Anthropic": {
+    "count": 661,
+    "ok": true
+   },
+   "Anyscale": {
+    "count": 24,
+    "ok": true
+   },
+   "Aptos Labs": {
+    "count": 7,
+    "ok": true
+   },
+   "Asana": {
+    "count": 112,
+    "ok": true
+   },
+   "AssemblyAI": {
+    "count": 19,
+    "ok": true
+   },
+   "Atlan": {
+    "count": 7,
+    "ok": true
+   },
+   "Attentive": {
+    "count": 31,
+    "ok": true
+   },
+   "Baseten": {
+    "count": 103,
+    "ok": true
+   },
+   "Benchling": {
+    "count": 53,
+    "ok": true
+   },
+   "Binance": {
+    "count": 223,
+    "ok": true
+   },
+   "BitGo": {
+    "count": 58,
+    "ok": true
+   },
+   "Block": {
+    "count": 184,
+    "ok": true
+   },
+   "Braze": {
+    "count": 338,
+    "ok": true
+   },
+   "Brex": {
+    "count": 278,
+    "ok": true
+   },
+   "Browserbase": {
+    "count": 9,
+    "ok": true
+   },
+   "Bybit": {
+    "count": 161,
+    "ok": true
+   },
+   "CarGurus": {
+    "count": 41,
+    "ok": true
+   },
+   "Careem": {
+    "count": 15,
+    "ok": true
+   },
+   "Carta": {
+    "count": 76,
+    "ok": true
+   },
+   "Celonis": {
+    "count": 265,
+    "ok": true
+   },
+   "Chalk": {
+    "count": 17,
+    "ok": true
+   },
+   "Character AI": {
+    "count": 13,
+    "ok": true
+   },
+   "Checkout.com": {
+    "count": 173,
+    "ok": true
+   },
+   "Checkr": {
+    "count": 38,
+    "ok": true
+   },
+   "Chime": {
+    "count": 71,
+    "ok": true
+   },
+   "Clay": {
+    "count": 61,
+    "ok": true
+   },
+   "ClickHouse": {
+    "count": 206,
+    "ok": true
+   },
+   "Cloudflare": {
+    "count": 471,
+    "ok": true
+   },
+   "Cockroach Labs": {
+    "count": 13,
+    "ok": true
+   },
+   "Cohere": {
+    "count": 122,
+    "ok": true
+   },
+   "Coinbase": {
+    "count": 261,
+    "ok": true
+   },
+   "Collibra": {
+    "count": 21,
+    "ok": true
+   },
+   "Column": {
+    "count": 23,
+    "ok": true
+   },
+   "Compass": {
+    "count": 161,
+    "ok": true
+   },
+   "CoreWeave": {
+    "count": 305,
+    "ok": true
+   },
+   "Cresta": {
+    "count": 87,
+    "ok": true
+   },
+   "Cribl": {
+    "count": 78,
+    "ok": true
+   },
+   "CrowdStrike": {
+    "error": "POST https://crowdstrike.wd5.myworkdayjobs.com/wday/cxs/crowdstrike/crowdstrikecareers/jobs failed: 429 Client Error: Too Many Requests for url: https://crowdstrike.wd5.myworkdayjobs.com/wday/cxs/crow",
+    "ok": false
+   },
+   "Crusoe": {
+    "count": 315,
+    "ok": true
+   },
+   "Crypto.com": {
+    "count": 87,
+    "ok": true
+   },
+   "Cursor": {
+    "count": 97,
+    "ok": true
+   },
+   "DP World": {
+    "count": 90,
+    "ok": true
+   },
+   "DRW": {
+    "count": 160,
+    "ok": true
+   },
+   "Databricks": {
+    "count": 890,
+    "ok": true
+   },
+   "Datadog": {
+    "count": 382,
+    "ok": true
+   },
+   "Dataiku": {
+    "count": 14,
+    "ok": true
+   },
+   "Decagon": {
+    "count": 119,
+    "ok": true
+   },
+   "Deepgram": {
+    "count": 59,
+    "ok": true
+   },
+   "Deliveroo": {
+    "count": 182,
+    "ok": true
+   },
+   "Delivery Hero (talabat)": {
+    "count": 54,
+    "ok": true
+   },
+   "Discord": {
+    "count": 26,
+    "ok": true
+   },
+   "DoorDash": {
+    "count": 424,
+    "ok": true
+   },
+   "Drata": {
+    "count": 23,
+    "ok": true
+   },
+   "Dremio": {
+    "count": 9,
+    "ok": true
+   },
+   "Dropbox": {
+    "count": 44,
+    "ok": true
+   },
+   "Duolingo": {
+    "count": 59,
+    "ok": true
+   },
+   "Elastic": {
+    "count": 405,
+    "ok": true
+   },
+   "ElevenLabs": {
+    "count": 125,
+    "ok": true
+   },
+   "Emirates NBD": {
+    "count": 13,
+    "ok": true
+   },
+   "Epic Games": {
+    "count": 139,
+    "ok": true
+   },
+   "EverQuote": {
+    "count": 14,
+    "ok": true
+   },
+   "Exa": {
+    "count": 67,
+    "ok": true
+   },
+   "Faire": {
+    "count": 70,
+    "ok": true
+   },
+   "Figma": {
+    "count": 139,
+    "ok": true
+   },
+   "Figure AI": {
+    "count": 105,
+    "ok": true
+   },
+   "Fireblocks": {
+    "count": 22,
+    "ok": true
+   },
+   "Fireworks AI": {
+    "count": 99,
+    "ok": true
+   },
+   "First Abu Dhabi Bank": {
+    "count": 18,
+    "ok": true
+   },
+   "Fivetran": {
+    "count": 185,
+    "ok": true
+   },
+   "Flatiron Health": {
+    "count": 23,
+    "ok": true
+   },
+   "Flexport": {
+    "count": 203,
+    "ok": true
+   },
+   "Formlabs": {
+    "count": 260,
+    "ok": true
+   },
+   "Forter": {
+    "count": 19,
+    "ok": true
+   },
+   "Freshworks": {
+    "count": 60,
+    "ok": true
+   },
+   "Gainsight": {
+    "count": 20,
+    "ok": true
+   },
+   "Gemini": {
+    "count": 26,
+    "ok": true
+   },
+   "Giga": {
+    "count": 32,
+    "ok": true
+   },
+   "Ginkgo Bioworks": {
+    "count": 18,
+    "ok": true
+   },
+   "GitLab": {
+    "count": 249,
+    "ok": true
+   },
+   "Glean": {
+    "count": 119,
+    "ok": true
+   },
+   "Grafana Labs": {
+    "count": 136,
+    "ok": true
+   },
+   "Group-IB": {
+    "count": 23,
+    "ok": true
+   },
+   "Gusto": {
+    "count": 76,
+    "ok": true
+   },
+   "Handshake": {
+    "count": 71,
+    "ok": true
+   },
+   "Harvey": {
+    "count": 390,
+    "ok": true
+   },
+   "Hex": {
+    "count": 39,
+    "ok": true
+   },
+   "Hinge Health": {
+    "count": 82,
+    "ok": true
+   },
+   "Hometap": {
+    "count": 10,
+    "ok": true
+   },
+   "HubSpot": {
+    "count": 139,
+    "ok": true
+   },
+   "Hudson River Trading": {
+    "count": 85,
+    "ok": true
+   },
+   "IMC": {
+    "count": 156,
+    "ok": true
+   },
+   "InMobi": {
+    "count": 78,
+    "ok": true
+   },
+   "Insitro": {
+    "count": 13,
+    "ok": true
+   },
+   "Instacart": {
+    "count": 84,
+    "ok": true
+   },
+   "Intercom": {
+    "count": 115,
+    "ok": true
+   },
+   "Ironclad": {
+    "count": 23,
+    "ok": true
+   },
+   "Iterable": {
+    "count": 19,
+    "ok": true
+   },
+   "JPMorgan Chase": {
+    "count": 600,
+    "ok": true
+   },
+   "Jane Street": {
+    "count": 216,
+    "ok": true
+   },
+   "Jellyfish": {
+    "count": 4,
+    "ok": true
+   },
+   "Jump Trading": {
+    "count": 92,
+    "ok": true
+   },
+   "Klaviyo": {
+    "error": "GET https://api.ashbyhq.com/posting-api/job-board/klaviyo -> HTTP 404",
+    "ok": false
+   },
+   "Komodo Health": {
+    "count": 16,
+    "ok": true
+   },
+   "Kraken": {
+    "count": 96,
+    "ok": true
+   },
+   "Lambda": {
+    "count": 96,
+    "ok": true
+   },
+   "LangChain": {
+    "count": 103,
+    "ok": true
+   },
+   "LaunchDarkly": {
+    "count": 36,
+    "ok": true
+   },
+   "Lean Technologies": {
+    "count": 8,
+    "ok": true
+   },
+   "Lemonade": {
+    "count": 40,
+    "ok": true
+   },
+   "Linear": {
+    "count": 33,
+    "ok": true
+   },
+   "Lucid Motors": {
+    "count": 478,
+    "ok": true
+   },
+   "Lyft": {
+    "count": 146,
+    "ok": true
+   },
+   "Masdar": {
+    "count": 23,
+    "ok": true
+   },
+   "Mercor": {
+    "count": 91,
+    "ok": true
+   },
+   "Mercury": {
+    "count": 78,
+    "ok": true
+   },
+   "Middesk": {
+    "count": 17,
+    "ok": true
+   },
+   "Miro": {
+    "count": 12,
+    "ok": true
+   },
+   "Mixpanel": {
+    "count": 40,
+    "ok": true
+   },
+   "Modal": {
+    "count": 49,
+    "ok": true
+   },
+   "Modern Treasury": {
+    "count": 7,
+    "ok": true
+   },
+   "MongoDB": {
+    "count": 397,
+    "ok": true
+   },
+   "Monte Carlo": {
+    "count": 10,
+    "ok": true
+   },
+   "Motherduck": {
+    "count": 6,
+    "ok": true
+   },
+   "Motional": {
+    "count": 78,
+    "ok": true
+   },
+   "Mysten Labs": {
+    "count": 10,
+    "ok": true
+   },
+   "Namshi": {
+    "count": 6,
+    "ok": true
+   },
+   "Navan": {
+    "count": 234,
+    "ok": true
+   },
+   "New Relic": {
+    "count": 41,
+    "ok": true
+   },
+   "Nextdoor": {
+    "count": 21,
+    "ok": true
+   },
+   "Notion": {
+    "count": 165,
+    "ok": true
+   },
+   "Nuro": {
+    "count": 100,
+    "ok": true
+   },
+   "Nvidia": {
+    "error": "POST https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIAExternalCareerSite/jobs failed: 429 Client Error: Too Many Requests for url: https://nvidia.wd5.myworkdayjobs.com/wday/cxs/nvidia/NVIDIA",
+    "ok": false
+   },
+   "OKX": {
+    "count": 394,
+    "ok": true
+   },
+   "Okta": {
+    "count": 360,
+    "ok": true
+   },
+   "Oliver Wyman": {
+    "error": "POST https://mmc.wd1.myworkdayjobs.com/wday/cxs/mmc/MMC/jobs failed: 429 Client Error: Too Many Requests for url: https://mmc.wd1.myworkdayjobs.com/wday/cxs/mmc/MMC/jobs",
+    "ok": false
+   },
+   "OpenAI": {
+    "count": 833,
+    "ok": true
+   },
+   "OpenEvidence": {
+    "count": 8,
+    "ok": true
+   },
+   "Optiver": {
+    "count": 150,
+    "ok": true
+   },
+   "Oracle": {
+    "count": 341,
+    "ok": true
+   },
+   "Oura": {
+    "count": 92,
+    "ok": true
+   },
+   "Outreach": {
+    "count": 14,
+    "ok": true
+   },
+   "PagerDuty": {
+    "count": 46,
+    "ok": true
+   },
+   "Palantir": {
+    "count": 303,
+    "ok": true
+   },
+   "Parallel": {
+    "count": 34,
+    "ok": true
+   },
+   "PathAI": {
+    "count": 15,
+    "ok": true
+   },
+   "Patreon": {
+    "count": 22,
+    "ok": true
+   },
+   "Paxos": {
+    "count": 24,
+    "ok": true
+   },
+   "Peloton": {
+    "count": 39,
+    "ok": true
+   },
+   "Pendo": {
+    "count": 21,
+    "ok": true
+   },
+   "Perplexity": {
+    "count": 144,
+    "ok": true
+   },
+   "Persona": {
+    "count": 13,
+    "ok": true
+   },
+   "Physical Intelligence": {
+    "count": 47,
+    "ok": true
+   },
+   "Pika": {
+    "count": 18,
+    "ok": true
+   },
+   "Pilot": {
+    "count": 10,
+    "ok": true
+   },
+   "Pinecone": {
+    "count": 6,
+    "ok": true
+   },
+   "Pinterest": {
+    "count": 162,
+    "ok": true
+   },
+   "Plaid": {
+    "count": 141,
+    "ok": true
+   },
+   "PlanetScale": {
+    "count": 12,
+    "ok": true
+   },
+   "Point72": {
+    "count": 196,
+    "ok": true
+   },
+   "PostHog": {
+    "count": 9,
+    "ok": true
+   },
+   "Pure Storage": {
+    "count": 375,
+    "ok": true
+   },
+   "Pylon": {
+    "count": 26,
+    "ok": true
+   },
+   "Qualtrics": {
+    "count": 149,
+    "ok": true
+   },
+   "Quora": {
+    "count": 8,
+    "ok": true
+   },
+   "Railway": {
+    "count": 7,
+    "ok": true
+   },
+   "Rain": {
+    "count": 45,
+    "ok": true
+   },
+   "Ramp": {
+    "count": 178,
+    "ok": true
+   },
+   "Recursion": {
+    "count": 18,
+    "ok": true
+   },
+   "Reddit": {
+    "count": 148,
+    "ok": true
+   },
+   "Redis": {
+    "count": 29,
+    "ok": true
+   },
+   "Reflection": {
+    "count": 46,
+    "ok": true
+   },
+   "Render": {
+    "count": 37,
+    "ok": true
+   },
+   "Replit": {
+    "count": 31,
+    "ok": true
+   },
+   "Riot Games": {
+    "count": 196,
+    "ok": true
+   },
+   "Ripple": {
+    "count": 112,
+    "ok": true
+   },
+   "Robinhood": {
+    "count": 164,
+    "ok": true
+   },
+   "Roblox": {
+    "count": 263,
+    "ok": true
+   },
+   "Rogo": {
+    "count": 102,
+    "ok": true
+   },
+   "Roland Berger": {
+    "count": 6,
+    "ok": true
+   },
+   "Salesloft": {
+    "count": 24,
+    "ok": true
+   },
+   "Salsify": {
+    "count": 14,
+    "ok": true
+   },
+   "Samsara": {
+    "count": 317,
+    "ok": true
+   },
+   "Sardine": {
+    "count": 39,
+    "ok": true
+   },
+   "Scale AI": {
+    "count": 170,
+    "ok": true
+   },
+   "Schonfeld": {
+    "count": 72,
+    "ok": true
+   },
+   "Scopely": {
+    "count": 178,
+    "ok": true
+   },
+   "Seera Group (Almosafer)": {
+    "count": 6,
+    "ok": true
+   },
+   "SentinelOne": {
+    "count": 254,
+    "ok": true
+   },
+   "Sentry": {
+    "count": 39,
+    "ok": true
+   },
+   "ServiceNow": {
+    "count": 472,
+    "ok": true
+   },
+   "Sesame": {
+    "count": 16,
+    "ok": true
+   },
+   "Sierra": {
+    "count": 197,
+    "ok": true
+   },
+   "Sigma Computing": {
+    "count": 81,
+    "ok": true
+   },
+   "SimpliSafe": {
+    "count": 34,
+    "ok": true
+   },
+   "Simplify new-grad list": {
+    "count": 259,
+    "ok": true
+   },
+   "SingleStore": {
+    "count": 39,
+    "ok": true
+   },
+   "Skydio": {
+    "count": 189,
+    "ok": true
+   },
+   "Snowflake": {
+    "count": 375,
+    "ok": true
+   },
+   "Snyk": {
+    "count": 38,
+    "ok": true
+   },
+   "SoFi": {
+    "count": 50,
+    "ok": true
+   },
+   "Spotify": {
+    "count": 88,
+    "ok": true
+   },
+   "Sprout Social": {
+    "count": 21,
+    "ok": true
+   },
+   "Squarepoint Capital": {
+    "count": 91,
+    "ok": true
+   },
+   "Squarespace": {
+    "count": 17,
+    "ok": true
+   },
+   "Starburst": {
+    "count": 35,
+    "ok": true
+   },
+   "Stripe": {
+    "count": 789,
+    "ok": true
+   },
+   "Substack": {
+    "count": 20,
+    "ok": true
+   },
+   "Suno": {
+    "count": 63,
+    "ok": true
+   },
+   "Sword Health": {
+    "count": 48,
+    "ok": true
+   },
+   "Synthesia": {
+    "count": 29,
+    "ok": true
+   },
+   "Tamara": {
+    "count": 37,
+    "ok": true
+   },
+   "Temporal": {
+    "count": 84,
+    "ok": true
+   },
+   "Teneo": {
+    "count": 57,
+    "ok": true
+   },
+   "Tennr": {
+    "count": 23,
+    "ok": true
+   },
+   "Thinking Machines": {
+    "count": 53,
+    "ok": true
+   },
+   "Thumbtack": {
+    "count": 40,
+    "ok": true
+   },
+   "Thunes": {
+    "count": 34,
+    "ok": true
+   },
+   "Toast": {
+    "count": 348,
+    "ok": true
+   },
+   "Together AI": {
+    "count": 79,
+    "ok": true
+   },
+   "Turing": {
+    "count": 44,
+    "ok": true
+   },
+   "Twilio": {
+    "count": 108,
+    "ok": true
+   },
+   "Twitch": {
+    "count": 58,
+    "ok": true
+   },
+   "Typeface": {
+    "count": 18,
+    "ok": true
+   },
+   "UiPath": {
+    "count": 101,
+    "ok": true
+   },
+   "Vanta": {
+    "count": 80,
+    "ok": true
+   },
+   "Vapi": {
+    "count": 5,
+    "ok": true
+   },
+   "Vercel": {
+    "count": 86,
+    "ok": true
+   },
+   "Verkada": {
+    "count": 343,
+    "ok": true
+   },
+   "Vertex Pharmaceuticals": {
+    "error": "POST https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs failed: 429 Client Error: Too Many Requests for url: https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs",
+    "ok": false
+   },
+   "Virtu": {
+    "count": 45,
+    "ok": true
+   },
+   "Waymo": {
+    "count": 372,
+    "ok": true
+   },
+   "Webflow": {
+    "count": 26,
+    "ok": true
+   },
+   "Whoop": {
+    "count": 112,
+    "ok": true
+   },
+   "Wise": {
+    "count": 33,
+    "ok": true
+   },
+   "Wiz": {
+    "count": 108,
+    "ok": true
+   },
+   "WorkOS": {
+    "count": 27,
+    "ok": true
+   },
+   "World Labs": {
+    "count": 8,
+    "ok": true
+   },
+   "Writer": {
+    "count": 45,
+    "ok": true
+   },
+   "Yahoo": {
+    "error": "POST https://ouryahoo.wd5.myworkdayjobs.com/wday/cxs/ouryahoo/careers/jobs failed: 429 Client Error: Too Many Requests for url: https://ouryahoo.wd5.myworkdayjobs.com/wday/cxs/ouryahoo/careers/jobs",
+    "ok": false
+   },
+   "Yext": {
+    "count": 30,
+    "ok": true
+   },
+   "Zapier": {
+    "count": 10,
+    "ok": true
+   },
+   "Ziina": {
+    "count": 13,
+    "ok": true
+   },
+   "ZoomInfo": {
+    "count": 88,
+    "ok": true
+   },
+   "Zoox": {
+    "count": 238,
+    "ok": true
+   },
+   "Zscaler": {
+    "count": 378,
+    "ok": true
+   },
+   "eBay": {
+    "error": "POST https://ebay.wd5.myworkdayjobs.com/wday/cxs/ebay/apply/jobs failed: 429 Client Error: Too Many Requests for url: https://ebay.wd5.myworkdayjobs.com/wday/cxs/ebay/apply/jobs",
+    "ok": false
+   },
+   "xAI": {
+    "count": 297,
+    "ok": true
+   }
+  }
+ },
+ "last_digest": {
+  "uae": "2026-11-16",
+  "us": "2026-11-16"
+ }
+}
