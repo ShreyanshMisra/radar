@@ -1,0 +1,103 @@
+# Everything tunable lives here. Who you are lives in profile.md; who to watch in companies.yaml.
+
+regions:
+  us:
+    name: United States
+    flag: "🇺🇸"
+    timezone: America/New_York
+    iso2: US                                  # SmartRecruiters country filter
+    countries: [US, USA, UNITED STATES, UNITED STATES OF AMERICA]   # structured values from job boards
+    workday_countries: [United States of America, United States, USA]
+    amazon_country: USA
+    location_pattern: "builtin:us"            # see scout/regions.py
+    not_pattern: "builtin:us_not"
+    claim_bare_remote: true                   # a location of just "Remote" is treated as possibly US
+    preferred_pattern: "Massachusetts|\\bMA\\b|Boston|Cambridge|Somerville|Waltham|Burlington|Lexington|Needham|Framingham|Marlborough|Chelmsford|Worcester|Amherst"
+    preferred_label: Massachusetts / Greater Boston
+    # Given to the model verbatim: location preference and work-authorization rules for this region.
+    brief: |
+      Location: the role must be in the United States or US-remote. The candidate slightly prefers
+      Massachusetts, especially Greater Boston, but strong roles anywhere in the US count. For remote
+      roles, record any geographic restriction the posting states.
+
+      Work authorization: the candidate is on F-1 OPT and will need sponsorship in future.
+      - "excluded": the posting explicitly requires US citizenship, permanent residency, a security
+        clearance (or eligibility for one), or says it will not sponsor now or in the future, or
+        requires unrestricted work authorization without sponsorship.
+      - "favorable": the posting explicitly says it sponsors visas, accepts OPT/CPT/F-1, or offers
+        sponsorship or immigration support.
+      - "unknown": the posting is silent, or only says something generic such as "must be authorized
+        to work in the US".
+
+  uae:
+    name: Dubai / UAE
+    flag: "🇦🇪"
+    timezone: Asia/Dubai
+    iso2: AE
+    countries: [AE, ARE, UAE, UNITED ARAB EMIRATES]
+    workday_countries: [United Arab Emirates, UAE]
+    amazon_country: ARE
+    location_pattern: "\\b(Dubai|Abu Dhabi|Sharjah|United Arab Emirates|U\\.?A\\.?E\\.?|Emirates|DIFC|ADGM)\\b"
+    preferred_pattern: "Dubai|DIFC"
+    preferred_label: Dubai
+    brief: |
+      Location: the role must be based in the United Arab Emirates. Dubai is preferred; Abu Dhabi and
+      other emirates are acceptable. Roles based elsewhere in the Gulf (Riyadh, Doha, etc.) are out
+      of scope even if the team covers the UAE.
+
+      Work authorization: the candidate is not a UAE or GCC national and will need the employer to
+      sponsor a UAE work/residence visa, which is standard practice for professional roles there.
+      - "excluded": the posting is restricted to UAE nationals (Emiratisation / "UAE National" /
+        "Emirati" programmes), requires GCC nationality, or says the candidate must already hold
+        their own visa with no employer sponsorship.
+      - "favorable": the posting explicitly says it provides visa sponsorship or relocation.
+      - "unknown": the posting is silent.
+      The resume does not list Arabic. If Arabic is required, say so in `gap` and score fit
+      accordingly; if it is only "a plus", mention it briefly.
+
+screen:
+  # A title must match this to be considered at all (case-insensitive).
+  include_title: "software|developer|engineer|\\bdata\\b|analyst|analytics|\\bproduct\\b|forward.deployed|deployment strategist|solutions?|implementation|business intelligence|\\bbi\\b|strategy|operations|\\bbizops\\b|machine learning|\\bml\\b|\\bai\\b|technical|consultant|scientist|insights|program manager|customer success|new grad|graduate|rotational|associate|chief of staff"
+  # Titles matching this are dropped outright: seniority, internships, and professions the resume
+  # does not point at. "Manager" survives only as product / program / project manager.
+  exclude_title: "\\b(senior|sr\\.?|(?<!chief of )staff|principal|lead|director|head of|vp|vice president|chief (?!of staff)|architect|expert|distinguished|fellow|intern|internship|co-?op|apprentice|apprenticeship|working student|werkstudent|part.time|contract|contractor|freelance|temporary|phd|postdoc|summer|seasonal|returnship|banker|teller|uae nationals?|emirati|iii|iv|[3-9])\\b|(?<!product )(?<!program )(?<!project )(?<!success )\\bmanager\\b|\\b(account executive|sales|recruit\\w*|talent|marketing|designer|attorney|counsel|paralegal|legal|accountant|accounting|tax|audit\\w*|payroll|treasury|credit|underwrit\\w*|actuar\\w*|nurse|physician|clinical|pharmac\\w*|therapist|technician|mechanic\\w*|electrical|civil|hardware|asic|rtl|fpga|analog|firmware|silicon|circuit|manufacturing|warehouse|driver|cashier|barista|teacher|tutor|security guard|facilities|executive assistant|administrative|receptionist|hr|human resources|people partner|copywriter|content|editor|buyer|merchandis\\w*)\\b"
+  # Titles that themselves say entry level. These are read first when the per-run cap bites.
+  early_career_title: "new grad|new graduate|university grad|college grad|recent grad|graduate|early.career|early in career|entry.level|campus|junior|\\bjr\\b|associate|rotational|\\b(i|1)\\b|202[67]|emerging talent|apm\\b"
+
+sources:
+  # Postings older than this are ignored at fetch time.
+  lookback_days: 7
+  workers: 8
+  community_lists:
+    - name: Simplify new-grad list
+      url: https://raw.githubusercontent.com/SimplifyJobs/New-Grad-Positions/dev/.github/scripts/listings.json
+
+judge:
+  # "api": Anthropic API with ANTHROPIC_API_KEY (metered). "claude_code": headless `claude -p` on a
+  # Claude subscription login or CLAUDE_CODE_OAUTH_TOKEN (no per-token bill). "auto": api if a key
+  # is set, otherwise claude_code.
+  backend: auto
+  # One call per new posting, roughly 4k tokens in and a few hundred out. On the API,
+  # claude-opus-5-5 costs about 2 cents a posting; claude-haiku-5-5 about a twentieth of a cent.
+  model: claude-opus-5-5
+  effort: low
+  # Postings read per region per run. The rest stay queued while still fresh.
+  max_per_run: 80
+  workers: 4
+  description_max_chars: 14000
+
+digest:
+  min_fit: 70                 # below this a posting is not a "strong match"
+  max_items: 15               # never padded: fewer is normal
+  max_unverified: 5           # "freshness unverified" section
+  exceptional_fit: 85         # matches this strong may be older than a day...
+  exceptional_window_days: 2  # ...but no older than this
+  max_catchup_days: 7         # after missed runs, look back this far at most
+  repost_memory_days: 30      # same company + title within this window is a repost
+  post_when_empty: false      # skip the issue on days with nothing to report
+  close_after_days: 14        # older digest issues are closed to keep the open list an inbox
+
+github:
+  # Filled from GITHUB_REPOSITORY inside Actions. Set "owner/name" here to post from your laptop.
+  repo: ShreyanshMisra/radar
+  label: digest

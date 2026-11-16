@@ -1,0 +1,74 @@
+name: digest
+# Scheduled runs are registered by GitHub when this file is on the default branch.
+
+on:
+  schedule:
+    - cron: "15 3 * * *"    # 07:15 in Dubai (UTC+4, no daylight saving)  -> UAE digest
+    - cron: "15 12 * * *"   # 07:15 EST / 08:15 EDT                       -> US digest
+  workflow_dispatch:
+    inputs:
+      region:
+        description: "Region to run"
+        type: choice
+        options: [all, us, uae]
+        default: all
+      dry_run:
+        description: "Print the digest in the log; post nothing, save nothing"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # commit data/ (the dedup memory)
+  issues: write     # post the digest
+
+# Two runs must never push state at the same time.
+concurrency:
+  group: digest-state
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      # Only needed when judging on a Claude subscription token instead of an API key.
+      - name: Install Claude Code
+        if: env.ANTHROPIC_API_KEY == '' && env.CLAUDE_CODE_OAUTH_TOKEN != ''
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: Pick region
+        id: pick
+        run: |
+          case "${{ github.event.schedule }}" in
+            "15 3 * * *")  echo "region=uae" >> "$GITHUB_OUTPUT" ;;
+            "15 12 * * *") echo "region=us"  >> "$GITHUB_OUTPUT" ;;
+            *)             echo "region=${{ inputs.region || 'all' }}" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: Fetch, screen, judge, post
+        run: python -m scout run --region "${{ steps.pick.outputs.region }}" ${{ inputs.dry_run && '--dry-run' || '' }}
+
+      # Runs even if the step above failed part-way: a posted digest must be remembered.
+      - name: Commit state
+        if: always() && !inputs.dry_run
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then echo "no state changes"; exit 0; fi
+          git commit -m "digest: ${{ steps.pick.outputs.region }} $(date -u +%Y-%m-%d)"
+          git pull --rebase --autostash origin "${{ github.ref_name }}"
+          git push

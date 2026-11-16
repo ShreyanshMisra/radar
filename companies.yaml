@@ -1,0 +1,279 @@
+# Companies to watch. One line each.
+#
+#   name:   display name
+#   ats:    hiring platform: greenhouse | ashby | lever | smartrecruiters | workday | oracle | amazon
+#   token:  board id for greenhouse / ashby / lever / smartrecruiters (lever also takes `instance: eu`)
+#   workday: {host, tenant, site} for Workday career sites
+#   oracle:  {host, site} for Oracle Recruiting Cloud career sites
+#   early_only: [us]   on very large boards, only read titles that say entry level in these regions
+#
+# Find a company's entry with:  python -m scout probe "Company Name"
+# Every board here was verified to answer on 2026-11-16 (Workday sites throttle heavy use;
+# a 429 shows up under "Search limitations" and the next run tries again). A board that stops answering is reported
+# under "Search limitations" in each digest; remove or fix it here.
+
+# ---- Boards that currently list UAE roles (most also list US roles)
+- {name: Addepar, ats: greenhouse, token: addepar1}
+- {name: Airwallex, ats: ashby, token: airwallex}
+- {name: Aldar, ats: lever, token: aldar}
+- {name: "Seera Group (Almosafer)", ats: smartrecruiters, token: seera}
+- {name: Binance, ats: greenhouse, token: binance}
+- {name: Braze, ats: greenhouse, token: braze}
+- {name: Bybit, ats: greenhouse, token: bybit}
+- {name: Careem, ats: greenhouse, token: careem}
+- {name: Celonis, ats: greenhouse, token: celonis}
+- {name: Cohere, ats: ashby, token: cohere}
+- {name: Coinbase, ats: greenhouse, token: coinbase}
+- {name: Column, ats: ashby, token: column}
+- {name: Cribl, ats: greenhouse, token: cribl}
+- {name: "Crypto.com", ats: lever, token: crypto}
+- {name: Databricks, ats: greenhouse, token: databricks}
+- {name: Deliveroo, ats: greenhouse, token: deliveroo}
+- {name: "Delivery Hero (talabat)", ats: smartrecruiters, token: deliveryhero}
+- {name: Elastic, ats: greenhouse, token: elastic}
+- {name: ElevenLabs, ats: ashby, token: elevenlabs}
+- {name: Fireblocks, ats: greenhouse, token: fireblocks}
+- {name: GitLab, ats: greenhouse, token: gitlab}
+- {name: Kraken, ats: ashby, token: "kraken.com"}
+- {name: Lean Technologies, ats: ashby, token: leantech}
+- {name: MongoDB, ats: greenhouse, token: mongodb}
+- {name: Namshi, ats: smartrecruiters, token: namshi}
+- {name: OKX, ats: greenhouse, token: okx}
+- {name: OpenAI, ats: ashby, token: openai}
+- {name: Palantir, ats: lever, token: palantir}
+- {name: Point72, ats: greenhouse, token: point72}
+- {name: Pure Storage, ats: greenhouse, token: purestorage}
+- {name: Ripple, ats: greenhouse, token: ripple}
+- {name: Rogo, ats: ashby, token: rogo}
+- {name: Roland Berger, ats: smartrecruiters, token: rolandberger}
+- {name: Sardine, ats: ashby, token: sardine}
+- {name: Scale AI, ats: greenhouse, token: scaleai}
+- {name: SentinelOne, ats: greenhouse, token: sentinellabs}
+- {name: Spotify, ats: lever, token: spotify}
+- {name: Squarepoint Capital, ats: greenhouse, token: squarepointcapital}
+- {name: Tamara, ats: greenhouse, token: tamara}
+- {name: UiPath, ats: ashby, token: UiPath}
+- {name: xAI, ats: greenhouse, token: xai}
+- {name: Ziina, ats: ashby, token: ziina}
+- {name: Amazon, ats: amazon, early_only: [us]}
+- {name: "Checkout.com", ats: ashby, token: "checkout.com"}
+- {name: Masdar, ats: smartrecruiters, token: masdar}
+- {name: Oliver Wyman, ats: workday, workday: {host: mmc.wd1.myworkdayjobs.com, tenant: mmc, site: MMC}}
+- {name: CrowdStrike, ats: workday, workday: {host: crowdstrike.wd5.myworkdayjobs.com, tenant: crowdstrike, site: crowdstrikecareers}}
+- {name: Nvidia, ats: workday, workday: {host: nvidia.wd5.myworkdayjobs.com, tenant: nvidia, site: NVIDIAExternalCareerSite}}
+- {name: Vertex Pharmaceuticals, ats: workday, workday: {host: vrtx.wd501.myworkdayjobs.com, tenant: vrtx, site: Vertex_Careers}}
+- {name: Yahoo, ats: workday, workday: {host: ouryahoo.wd5.myworkdayjobs.com, tenant: ouryahoo, site: careers}}
+- {name: eBay, ats: workday, workday: {host: ebay.wd5.myworkdayjobs.com, tenant: ebay, site: apply}}
+- {name: Teneo, ats: greenhouse, token: teneo}
+- {name: Group-IB, ats: greenhouse, token: groupib}
+- {name: AlixPartners, ats: greenhouse, token: alixpartners}
+- {name: InMobi, ats: greenhouse, token: inmobi}
+- {name: Thunes, ats: greenhouse, token: thunes}
+- {name: BitGo, ats: greenhouse, token: bitgo}
+- {name: Redis, ats: ashby, token: redis}
+- {name: Schonfeld, ats: greenhouse, token: schonfeld}
+- {name: Emirates NBD, ats: oracle, oracle: {host: fa-evlo-saasfaprod1.fa.ocs.oraclecloud.com, site: CX_1}}
+- {name: First Abu Dhabi Bank, ats: oracle, oracle: {host: ehjd.fa.em2.oraclecloud.com, site: fabCareers}}
+- {name: DP World, ats: oracle, oracle: {host: ehpv.fa.em2.oraclecloud.com, site: CX_1}}
+- {name: Oracle, ats: oracle, oracle: {host: eeho.fa.us2.oraclecloud.com, site: jobsearch}, early_only: [us]}
+- {name: JPMorgan Chase, ats: oracle, oracle: {host: jpmc.fa.oraclecloud.com, site: CX_1001}, early_only: [us]}
+
+# ---- US boards
+- {name: Abridge, ats: ashby, token: abridge}
+- {name: Adyen, ats: greenhouse, token: adyen}
+- {name: Affirm, ats: greenhouse, token: affirm}
+- {name: Airbnb, ats: greenhouse, token: airbnb}
+- {name: Airbyte, ats: ashby, token: airbyte}
+- {name: Airtable, ats: greenhouse, token: airtable}
+- {name: Akuna Capital, ats: greenhouse, token: akunacapital}
+- {name: Alloy, ats: greenhouse, token: alloy}
+- {name: Amplitude, ats: ashby, token: amplitude}
+- {name: Anchorage Digital, ats: lever, token: anchorage}
+- {name: AngelList, ats: lever, token: angellist}
+- {name: Anthropic, ats: greenhouse, token: anthropic}
+- {name: Anyscale, ats: ashby, token: anyscale}
+- {name: Aptos Labs, ats: greenhouse, token: aptoslabs}
+- {name: Asana, ats: greenhouse, token: asana}
+- {name: AssemblyAI, ats: greenhouse, token: assemblyai}
+- {name: Atlan, ats: ashby, token: atlan}
+- {name: Attentive, ats: greenhouse, token: attentive}
+- {name: Baseten, ats: ashby, token: baseten}
+- {name: Benchling, ats: ashby, token: benchling}
+- {name: Block, ats: greenhouse, token: block}
+- {name: Brex, ats: greenhouse, token: brex}
+- {name: Browserbase, ats: ashby, token: browserbase}
+- {name: CarGurus, ats: greenhouse, token: cargurus}
+- {name: Carta, ats: greenhouse, token: carta}
+- {name: Chalk, ats: ashby, token: chalk}
+- {name: Character AI, ats: ashby, token: character}
+- {name: Checkr, ats: greenhouse, token: checkr}
+- {name: Chime, ats: greenhouse, token: chime}
+- {name: Clay, ats: ashby, token: claylabs}
+- {name: ClickHouse, ats: ashby, token: clickhouse}
+- {name: Cloudflare, ats: greenhouse, token: cloudflare}
+- {name: Cockroach Labs, ats: greenhouse, token: cockroachlabs}
+- {name: Collibra, ats: greenhouse, token: collibra}
+- {name: Compass, ats: greenhouse, token: urbancompass}
+- {name: CoreWeave, ats: greenhouse, token: coreweave}
+- {name: Cresta, ats: greenhouse, token: cresta}
+- {name: Crusoe, ats: ashby, token: crusoe}
+- {name: Cursor, ats: ashby, token: cursor}
+- {name: Datadog, ats: greenhouse, token: datadog}
+- {name: Dataiku, ats: greenhouse, token: dataiku}
+- {name: Decagon, ats: ashby, token: decagon}
+- {name: Deepgram, ats: ashby, token: deepgram}
+- {name: Discord, ats: greenhouse, token: discord}
+- {name: DoorDash, ats: greenhouse, token: doordashusa}
+- {name: Drata, ats: ashby, token: drata}
+- {name: Dremio, ats: greenhouse, token: dremio}
+- {name: Dropbox, ats: greenhouse, token: dropbox}
+- {name: DRW, ats: greenhouse, token: drweng}
+- {name: Duolingo, ats: greenhouse, token: duolingo}
+- {name: Epic Games, ats: greenhouse, token: epicgames}
+- {name: EverQuote, ats: greenhouse, token: everquote}
+- {name: Exa, ats: ashby, token: exa}
+- {name: Faire, ats: greenhouse, token: faire}
+- {name: Figma, ats: greenhouse, token: figma}
+- {name: Figure AI, ats: greenhouse, token: figureai}
+- {name: Fireworks AI, ats: ashby, token: fireworks}
+- {name: Fivetran, ats: greenhouse, token: fivetran}
+- {name: Flatiron Health, ats: greenhouse, token: flatironhealth}
+- {name: Flexport, ats: greenhouse, token: flexport}
+- {name: Formlabs, ats: greenhouse, token: formlabs}
+- {name: Forter, ats: greenhouse, token: forter}
+- {name: Freshworks, ats: smartrecruiters, token: freshworks}
+- {name: Gainsight, ats: ashby, token: gainsight}
+- {name: Gemini, ats: greenhouse, token: gemini}
+- {name: Giga, ats: ashby, token: gigaml}
+- {name: Ginkgo Bioworks, ats: greenhouse, token: ginkgobioworks}
+- {name: Glean, ats: greenhouse, token: gleanwork}
+- {name: Grafana Labs, ats: greenhouse, token: grafanalabs}
+- {name: Gusto, ats: greenhouse, token: gusto}
+- {name: Handshake, ats: ashby, token: handshake}
+- {name: Harvey, ats: ashby, token: harvey}
+- {name: Hex, ats: ashby, token: hex}
+- {name: Hinge Health, ats: ashby, token: hinge-health}
+- {name: Hometap, ats: greenhouse, token: hometap}
+- {name: HubSpot, ats: greenhouse, token: hubspotjobs}
+- {name: Hudson River Trading, ats: greenhouse, token: wehrtyou}
+- {name: IMC, ats: greenhouse, token: imc}
+- {name: Insitro, ats: ashby, token: insitro}
+- {name: Instacart, ats: greenhouse, token: instacart}
+- {name: Intercom, ats: greenhouse, token: intercom}
+- {name: Ironclad, ats: ashby, token: ironcladhq}
+- {name: Iterable, ats: ashby, token: iterable}
+- {name: Jane Street, ats: greenhouse, token: janestreet}
+- {name: Jellyfish, ats: ashby, token: jellyfish}
+- {name: Jump Trading, ats: greenhouse, token: jumptrading}
+- {name: Klaviyo, ats: ashby, token: klaviyo}
+- {name: Komodo Health, ats: greenhouse, token: komodohealth}
+- {name: Lambda, ats: ashby, token: lambda}
+- {name: LangChain, ats: ashby, token: langchain}
+- {name: LaunchDarkly, ats: greenhouse, token: launchdarkly}
+- {name: Lemonade, ats: ashby, token: lemonade}
+- {name: Linear, ats: ashby, token: linear}
+- {name: Lucid Motors, ats: greenhouse, token: lucidmotors}
+- {name: Lyft, ats: greenhouse, token: lyft}
+- {name: Mercor, ats: ashby, token: mercor}
+- {name: Mercury, ats: greenhouse, token: mercury}
+- {name: Middesk, ats: ashby, token: middesk}
+- {name: Miro, ats: ashby, token: miro}
+- {name: Mixpanel, ats: greenhouse, token: mixpanel}
+- {name: Modal, ats: ashby, token: modal}
+- {name: Modern Treasury, ats: ashby, token: moderntreasury}
+- {name: Monte Carlo, ats: ashby, token: montecarlodata}
+- {name: Motherduck, ats: ashby, token: motherduck}
+- {name: Motional, ats: greenhouse, token: motional}
+- {name: Mysten Labs, ats: ashby, token: mystenlabs}
+- {name: Navan, ats: greenhouse, token: tripactions}
+- {name: New Relic, ats: greenhouse, token: newrelic}
+- {name: Nextdoor, ats: greenhouse, token: nextdoor}
+- {name: Notion, ats: ashby, token: notion}
+- {name: Nuro, ats: greenhouse, token: nuro}
+- {name: Okta, ats: greenhouse, token: okta}
+- {name: OpenEvidence, ats: ashby, token: openevidence}
+- {name: Optiver, ats: greenhouse, token: optiverus}
+- {name: Oura, ats: greenhouse, token: oura}
+- {name: Outreach, ats: lever, token: outreach}
+- {name: PagerDuty, ats: greenhouse, token: pagerduty}
+- {name: Parallel, ats: ashby, token: parallel}
+- {name: PathAI, ats: greenhouse, token: pathai}
+- {name: Patreon, ats: ashby, token: patreon}
+- {name: Paxos, ats: ashby, token: paxos}
+- {name: Peloton, ats: greenhouse, token: peloton}
+- {name: Pendo, ats: greenhouse, token: pendo}
+- {name: Perplexity, ats: ashby, token: perplexity}
+- {name: Persona, ats: ashby, token: persona}
+- {name: Physical Intelligence, ats: ashby, token: physicalintelligence}
+- {name: Pika, ats: ashby, token: pika}
+- {name: Pilot, ats: greenhouse, token: pilothq}
+- {name: Pinecone, ats: ashby, token: pinecone}
+- {name: Pinterest, ats: greenhouse, token: pinterest}
+- {name: Plaid, ats: ashby, token: plaid}
+- {name: PlanetScale, ats: greenhouse, token: planetscale}
+- {name: PostHog, ats: ashby, token: posthog}
+- {name: Pylon, ats: ashby, token: pylon}
+- {name: Qualtrics, ats: greenhouse, token: qualtrics}
+- {name: Quora, ats: ashby, token: quora}
+- {name: Railway, ats: ashby, token: railway}
+- {name: Rain, ats: ashby, token: rain}
+- {name: Ramp, ats: ashby, token: ramp}
+- {name: Recursion, ats: greenhouse, token: recursionpharmaceuticals}
+- {name: Reddit, ats: greenhouse, token: reddit}
+- {name: Reflection, ats: ashby, token: reflectionai}
+- {name: Render, ats: ashby, token: render}
+- {name: Replit, ats: ashby, token: replit}
+- {name: Riot Games, ats: greenhouse, token: riotgames}
+- {name: Robinhood, ats: greenhouse, token: robinhood}
+- {name: Roblox, ats: greenhouse, token: roblox}
+- {name: Salesloft, ats: greenhouse, token: salesloft}
+- {name: Salsify, ats: greenhouse, token: salsify}
+- {name: Samsara, ats: greenhouse, token: samsara}
+- {name: Scopely, ats: greenhouse, token: scopely}
+- {name: Sentry, ats: ashby, token: sentry}
+- {name: ServiceNow, ats: smartrecruiters, token: servicenow}
+- {name: Sesame, ats: ashby, token: sesame}
+- {name: Sierra, ats: ashby, token: sierra}
+- {name: Sigma Computing, ats: greenhouse, token: sigmacomputing}
+- {name: SimpliSafe, ats: greenhouse, token: simplisafe}
+- {name: SingleStore, ats: greenhouse, token: singlestore}
+- {name: Skydio, ats: ashby, token: skydio}
+- {name: Snowflake, ats: ashby, token: snowflake}
+- {name: Snyk, ats: ashby, token: snyk}
+- {name: SoFi, ats: greenhouse, token: sofi}
+- {name: Sprout Social, ats: greenhouse, token: sproutsocial}
+- {name: Squarespace, ats: greenhouse, token: squarespace}
+- {name: Starburst, ats: greenhouse, token: starburst}
+- {name: Stripe, ats: greenhouse, token: stripe}
+- {name: Substack, ats: ashby, token: substack}
+- {name: Suno, ats: ashby, token: suno}
+- {name: Sword Health, ats: greenhouse, token: swordhealth}
+- {name: Synthesia, ats: ashby, token: synthesia}
+- {name: Temporal, ats: ashby, token: temporal}
+- {name: Tennr, ats: ashby, token: tennr}
+- {name: Thinking Machines, ats: ashby, token: thinkingmachines}
+- {name: Thumbtack, ats: ashby, token: thumbtack}
+- {name: Toast, ats: greenhouse, token: toast}
+- {name: Together AI, ats: greenhouse, token: togetherai}
+- {name: Turing, ats: greenhouse, token: turing}
+- {name: Twilio, ats: greenhouse, token: twilio}
+- {name: Twitch, ats: greenhouse, token: twitch}
+- {name: Typeface, ats: greenhouse, token: typeface}
+- {name: Vanta, ats: ashby, token: vanta}
+- {name: Vapi, ats: ashby, token: vapi}
+- {name: Vercel, ats: greenhouse, token: vercel}
+- {name: Verkada, ats: greenhouse, token: verkada}
+- {name: Virtu, ats: greenhouse, token: virtu}
+- {name: Waymo, ats: greenhouse, token: waymo}
+- {name: Webflow, ats: ashby, token: webflow}
+- {name: Whoop, ats: ashby, token: whoop}
+- {name: Wise, ats: smartrecruiters, token: wise}
+- {name: Wiz, ats: greenhouse, token: wizinc}
+- {name: WorkOS, ats: ashby, token: workos}
+- {name: World Labs, ats: ashby, token: worldlabs}
+- {name: Writer, ats: ashby, token: writer}
+- {name: Yext, ats: greenhouse, token: yext}
+- {name: Zapier, ats: ashby, token: zapier}
+- {name: ZoomInfo, ats: greenhouse, token: zoominfo}
+- {name: Zoox, ats: lever, token: zoox}
+- {name: Zscaler, ats: greenhouse, token: zscaler}
