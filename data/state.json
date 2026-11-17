@@ -1,25 +1,25 @@
 {
  "health": {
-  "checked": "2026-11-16",
+  "checked": "2026-11-17",
   "sources": {
    "Abridge": {
-    "count": 24,
+    "count": 23,
     "ok": true
    },
    "Addepar": {
-    "count": 116,
+    "count": 117,
     "ok": true
    },
    "Adyen": {
-    "count": 245,
+    "count": 241,
     "ok": true
    },
    "Affirm": {
-    "count": 217,
+    "count": 213,
     "ok": true
    },
    "Airbnb": {
-    "count": 206,
+    "count": 205,
     "ok": true
    },
    "Airbyte": {
@@ -31,7 +31,7 @@
     "ok": true
    },
    "Airwallex": {
-    "count": 487,
+    "count": 485,
     "ok": true
    },
    "Akuna Capital": {
@@ -43,7 +43,7 @@
     "ok": true
    },
    "AlixPartners": {
-    "count": 132,
+    "count": 133,
     "ok": true
    },
    "Alloy": {
@@ -51,11 +51,11 @@
     "ok": true
    },
    "Amazon": {
-    "count": 566,
+    "count": 553,
     "ok": true
    },
    "Amplitude": {
-    "count": 48,
+    "count": 47,
     "ok": true
    },
    "Anchorage Digital": {
@@ -67,7 +67,7 @@
     "ok": true
    },
    "Anthropic": {
-    "count": 661,
+    "count": 660,
     "ok": true
    },
    "Anyscale": {
@@ -79,7 +79,7 @@
     "ok": true
    },
    "Asana": {
-    "count": 112,
+    "count": 113,
     "ok": true
    },
    "AssemblyAI": {
@@ -103,7 +103,7 @@
     "ok": true
    },
    "Binance": {
-    "count": 223,
+    "count": 224,
     "ok": true
    },
    "BitGo": {
@@ -111,23 +111,23 @@
     "ok": true
    },
    "Block": {
-    "count": 184,
+    "count": 185,
     "ok": true
    },
    "Braze": {
-    "count": 338,
+    "count": 335,
     "ok": true
    },
    "Brex": {
-    "count": 278,
+    "count": 277,
     "ok": true
    },
    "Browserbase": {
-    "count": 9,
-    "ok": true
+    "error": "GET https://api.ashbyhq.com/posting-api/job-board/browserbase -> HTTP 404",
+    "ok": false
    },
    "Bybit": {
-    "count": 161,
+    "count": 160,
     "ok": true
    },
    "CarGurus": {
@@ -135,15 +135,15 @@
     "ok": true
    },
    "Careem": {
-    "count": 15,
+    "count": 14,
     "ok": true
    },
    "Carta": {
-    "count": 76,
+    "count": 78,
     "ok": true
    },
    "Celonis": {
-    "count": 265,
+    "count": 263,
     "ok": true
    },
    "Chalk": {
@@ -155,27 +155,27 @@
     "ok": true
    },
    "Checkout.com": {
-    "count": 173,
+    "count": 171,
     "ok": true
    },
    "Checkr": {
-    "count": 38,
+    "count": 37,
     "ok": true
    },
    "Chime": {
-    "count": 71,
+    "count": 74,
     "ok": true
    },
    "Clay": {
-    "count": 61,
+    "count": 62,
     "ok": true
    },
    "ClickHouse": {
-    "count": 206,
+    "count": 207,
     "ok": true
    },
    "Cloudflare": {
-    "count": 471,
+    "count": 475,
     "ok": true
    },
    "Cockroach Labs": {
@@ -183,15 +183,15 @@
     "ok": true
    },
    "Cohere": {
-    "count": 122,
+    "count": 125,
     "ok": true
    },
    "Coinbase": {
-    "count": 261,
+    "count": 259,
     "ok": true
    },
    "Collibra": {
-    "count": 21,
+    "count": 22,
     "ok": true
    },
    "Column": {
@@ -199,11 +199,11 @@
     "ok": true
    },
    "Compass": {
-    "count": 161,
+    "count": 164,
     "ok": true
    },
    "CoreWeave": {
-    "count": 305,
+    "count": 303,
     "ok": true
    },
    "Cresta": {
@@ -219,31 +219,31 @@
     "ok": false
    },
    "Crusoe": {
-    "count": 315,
+    "count": 318,
     "ok": true
    },
    "Crypto.com": {
-    "count": 87,
+    "count": 85,
     "ok": true
    },
    "Cursor": {
-    "count": 97,
+    "count": 95,
     "ok": true
    },
    "DP World": {
-    "count": 90,
+    "count": 83,
     "ok": true
    },
    "DRW": {
-    "count": 160,
+    "count": 158,
     "ok": true
    },
    "Databricks": {
-    "count": 890,
+    "count": 891,
     "ok": true
    },
    "Datadog": {
-    "count": 382,
+    "count": 380,
     "ok": true
    },
    "Dataiku": {
@@ -251,7 +251,7 @@
     "ok": true
    },
    "Decagon": {
-    "count": 119,
+    "count": 114,
     "ok": true
    },
    "Deepgram": {
@@ -259,19 +259,19 @@
     "ok": true
    },
    "Deliveroo": {
-    "count": 182,
+    "count": 183,
     "ok": true
    },
    "Delivery Hero (talabat)": {
-    "count": 54,
+    "count": 45,
     "ok": true
    },
    "Discord": {
-    "count": 26,
+    "count": 25,
     "ok": true
    },
    "DoorDash": {
-    "count": 424,
+    "count": 426,
     "ok": true
    },
    "Drata": {
@@ -283,7 +283,7 @@
     "ok": true
    },
    "Dropbox": {
-    "count": 44,
+    "count": 41,
     "ok": true
    },
    "Duolingo": {
@@ -291,11 +291,11 @@
     "ok": true
    },
    "Elastic": {
-    "count": 405,
+    "count": 384,
     "ok": true
    },
    "ElevenLabs": {
-    "count": 125,
+    "count": 122,
     "ok": true
    },
    "Emirates NBD": {
@@ -319,27 +319,27 @@
     "ok": true
    },
    "Figma": {
-    "count": 139,
+    "count": 140,
     "ok": true
    },
    "Figure AI": {
-    "count": 105,
+    "count": 106,
     "ok": true
    },
    "Fireblocks": {
-    "count": 22,
+    "count": 23,
     "ok": true
    },
    "Fireworks AI": {
-    "count": 99,
+    "count": 102,
     "ok": true
    },
    "First Abu Dhabi Bank": {
-    "count": 18,
+    "count": 17,
     "ok": true
    },
    "Fivetran": {
-    "count": 185,
+    "count": 186,
     "ok": true
    },
    "Flatiron Health": {
@@ -351,7 +351,7 @@
     "ok": true
    },
    "Formlabs": {
-    "count": 260,
+    "count": 265,
     "ok": true
    },
    "Forter": {
@@ -379,7 +379,7 @@
     "ok": true
    },
    "GitLab": {
-    "count": 249,
+    "count": 253,
     "ok": true
    },
    "Glean": {
@@ -387,15 +387,15 @@
     "ok": true
    },
    "Grafana Labs": {
-    "count": 136,
+    "count": 134,
     "ok": true
    },
    "Group-IB": {
-    "count": 23,
+    "count": 19,
     "ok": true
    },
    "Gusto": {
-    "count": 76,
+    "count": 78,
     "ok": true
    },
    "Handshake": {
@@ -403,7 +403,7 @@
     "ok": true
    },
    "Harvey": {
-    "count": 390,
+    "count": 386,
     "ok": true
    },
    "Hex": {
@@ -411,7 +411,7 @@
     "ok": true
    },
    "Hinge Health": {
-    "count": 82,
+    "count": 83,
     "ok": true
    },
    "Hometap": {
@@ -419,7 +419,7 @@
     "ok": true
    },
    "HubSpot": {
-    "count": 139,
+    "count": 137,
     "ok": true
    },
    "Hudson River Trading": {
@@ -427,19 +427,19 @@
     "ok": true
    },
    "IMC": {
-    "count": 156,
+    "count": 154,
     "ok": true
    },
    "InMobi": {
-    "count": 78,
+    "count": 75,
     "ok": true
    },
    "Insitro": {
-    "count": 13,
+    "count": 14,
     "ok": true
    },
    "Instacart": {
-    "count": 84,
+    "count": 83,
     "ok": true
    },
    "Intercom": {
@@ -467,7 +467,7 @@
     "ok": true
    },
    "Jump Trading": {
-    "count": 92,
+    "count": 89,
     "ok": true
    },
    "Klaviyo": {
@@ -475,11 +475,11 @@
     "ok": false
    },
    "Komodo Health": {
-    "count": 16,
+    "count": 17,
     "ok": true
    },
    "Kraken": {
-    "count": 96,
+    "count": 91,
     "ok": true
    },
    "Lambda": {
@@ -491,7 +491,7 @@
     "ok": true
    },
    "LaunchDarkly": {
-    "count": 36,
+    "count": 33,
     "ok": true
    },
    "Lean Technologies": {
@@ -499,7 +499,7 @@
     "ok": true
    },
    "Lemonade": {
-    "count": 40,
+    "count": 39,
     "ok": true
    },
    "Linear": {
@@ -507,11 +507,11 @@
     "ok": true
    },
    "Lucid Motors": {
-    "count": 478,
+    "count": 491,
     "ok": true
    },
    "Lyft": {
-    "count": 146,
+    "count": 144,
     "ok": true
    },
    "Masdar": {
@@ -519,11 +519,11 @@
     "ok": true
    },
    "Mercor": {
-    "count": 91,
+    "count": 105,
     "ok": true
    },
    "Mercury": {
-    "count": 78,
+    "count": 76,
     "ok": true
    },
    "Middesk": {
@@ -539,7 +539,7 @@
     "ok": true
    },
    "Modal": {
-    "count": 49,
+    "count": 50,
     "ok": true
    },
    "Modern Treasury": {
@@ -547,7 +547,7 @@
     "ok": true
    },
    "MongoDB": {
-    "count": 397,
+    "count": 400,
     "ok": true
    },
    "Monte Carlo": {
@@ -559,7 +559,7 @@
     "ok": true
    },
    "Motional": {
-    "count": 78,
+    "count": 77,
     "ok": true
    },
    "Mysten Labs": {
@@ -571,7 +571,7 @@
     "ok": true
    },
    "Navan": {
-    "count": 234,
+    "count": 232,
     "ok": true
    },
    "New Relic": {
@@ -583,11 +583,11 @@
     "ok": true
    },
    "Notion": {
-    "count": 165,
+    "count": 164,
     "ok": true
    },
    "Nuro": {
-    "count": 100,
+    "count": 101,
     "ok": true
    },
    "Nvidia": {
@@ -599,7 +599,7 @@
     "ok": true
    },
    "Okta": {
-    "count": 360,
+    "count": 358,
     "ok": true
    },
    "Oliver Wyman": {
@@ -607,7 +607,7 @@
     "ok": false
    },
    "OpenAI": {
-    "count": 833,
+    "count": 840,
     "ok": true
    },
    "OpenEvidence": {
@@ -615,11 +615,11 @@
     "ok": true
    },
    "Optiver": {
-    "count": 150,
+    "count": 149,
     "ok": true
    },
    "Oracle": {
-    "count": 341,
+    "count": 309,
     "ok": true
    },
    "Oura": {
@@ -655,7 +655,7 @@
     "ok": true
    },
    "Peloton": {
-    "count": 39,
+    "count": 36,
     "ok": true
    },
    "Pendo": {
@@ -663,7 +663,7 @@
     "ok": true
    },
    "Perplexity": {
-    "count": 144,
+    "count": 148,
     "ok": true
    },
    "Persona": {
@@ -671,15 +671,15 @@
     "ok": true
    },
    "Physical Intelligence": {
-    "count": 47,
+    "count": 48,
     "ok": true
    },
    "Pika": {
-    "count": 18,
+    "count": 19,
     "ok": true
    },
    "Pilot": {
-    "count": 10,
+    "count": 9,
     "ok": true
    },
    "Pinecone": {
@@ -687,11 +687,11 @@
     "ok": true
    },
    "Pinterest": {
-    "count": 162,
+    "count": 167,
     "ok": true
    },
    "Plaid": {
-    "count": 141,
+    "count": 140,
     "ok": true
    },
    "PlanetScale": {
@@ -699,15 +699,15 @@
     "ok": true
    },
    "Point72": {
-    "count": 196,
+    "count": 198,
     "ok": true
    },
    "PostHog": {
-    "count": 9,
+    "count": 10,
     "ok": true
    },
    "Pure Storage": {
-    "count": 375,
+    "count": 376,
     "ok": true
    },
    "Pylon": {
@@ -715,7 +715,7 @@
     "ok": true
    },
    "Qualtrics": {
-    "count": 149,
+    "count": 148,
     "ok": true
    },
    "Quora": {
@@ -727,11 +727,11 @@
     "ok": true
    },
    "Rain": {
-    "count": 45,
+    "count": 46,
     "ok": true
    },
    "Ramp": {
-    "count": 178,
+    "count": 179,
     "ok": true
    },
    "Recursion": {
@@ -743,7 +743,7 @@
     "ok": true
    },
    "Redis": {
-    "count": 29,
+    "count": 28,
     "ok": true
    },
    "Reflection": {
@@ -751,7 +751,7 @@
     "ok": true
    },
    "Render": {
-    "count": 37,
+    "count": 36,
     "ok": true
    },
    "Replit": {
@@ -759,23 +759,23 @@
     "ok": true
    },
    "Riot Games": {
-    "count": 196,
+    "count": 200,
     "ok": true
    },
    "Ripple": {
-    "count": 112,
+    "count": 111,
     "ok": true
    },
    "Robinhood": {
-    "count": 164,
+    "count": 166,
     "ok": true
    },
    "Roblox": {
-    "count": 263,
+    "count": 265,
     "ok": true
    },
    "Rogo": {
-    "count": 102,
+    "count": 101,
     "ok": true
    },
    "Roland Berger": {
@@ -783,7 +783,7 @@
     "ok": true
    },
    "Salesloft": {
-    "count": 24,
+    "count": 26,
     "ok": true
    },
    "Salsify": {
@@ -791,7 +791,7 @@
     "ok": true
    },
    "Samsara": {
-    "count": 317,
+    "count": 315,
     "ok": true
    },
    "Sardine": {
@@ -799,7 +799,7 @@
     "ok": true
    },
    "Scale AI": {
-    "count": 170,
+    "count": 169,
     "ok": true
    },
    "Schonfeld": {
@@ -807,7 +807,7 @@
     "ok": true
    },
    "Scopely": {
-    "count": 178,
+    "count": 176,
     "ok": true
    },
    "Seera Group (Almosafer)": {
@@ -815,7 +815,7 @@
     "ok": true
    },
    "SentinelOne": {
-    "count": 254,
+    "count": 256,
     "ok": true
    },
    "Sentry": {
@@ -823,7 +823,7 @@
     "ok": true
    },
    "ServiceNow": {
-    "count": 472,
+    "count": 482,
     "ok": true
    },
    "Sesame": {
@@ -839,23 +839,23 @@
     "ok": true
    },
    "SimpliSafe": {
-    "count": 34,
+    "count": 35,
     "ok": true
    },
    "Simplify new-grad list": {
-    "count": 259,
+    "count": 268,
     "ok": true
    },
    "SingleStore": {
-    "count": 39,
+    "count": 40,
     "ok": true
    },
    "Skydio": {
-    "count": 189,
+    "count": 188,
     "ok": true
    },
    "Snowflake": {
-    "count": 375,
+    "count": 379,
     "ok": true
    },
    "Snyk": {
@@ -867,15 +867,15 @@
     "ok": true
    },
    "Spotify": {
-    "count": 88,
+    "count": 87,
     "ok": true
    },
    "Sprout Social": {
-    "count": 21,
+    "count": 20,
     "ok": true
    },
    "Squarepoint Capital": {
-    "count": 91,
+    "count": 88,
     "ok": true
    },
    "Squarespace": {
@@ -883,11 +883,11 @@
     "ok": true
    },
    "Starburst": {
-    "count": 35,
+    "count": 34,
     "ok": true
    },
    "Stripe": {
-    "count": 789,
+    "count": 794,
     "ok": true
    },
    "Substack": {
@@ -895,11 +895,11 @@
     "ok": true
    },
    "Suno": {
-    "count": 63,
+    "count": 62,
     "ok": true
    },
    "Sword Health": {
-    "count": 48,
+    "count": 44,
     "ok": true
    },
    "Synthesia": {
@@ -907,15 +907,15 @@
     "ok": true
    },
    "Tamara": {
-    "count": 37,
+    "count": 38,
     "ok": true
    },
    "Temporal": {
-    "count": 84,
+    "count": 86,
     "ok": true
    },
    "Teneo": {
-    "count": 57,
+    "count": 56,
     "ok": true
    },
    "Tennr": {
@@ -923,7 +923,7 @@
     "ok": true
    },
    "Thinking Machines": {
-    "count": 53,
+    "count": 57,
     "ok": true
    },
    "Thumbtack": {
@@ -931,15 +931,15 @@
     "ok": true
    },
    "Thunes": {
-    "count": 34,
+    "count": 35,
     "ok": true
    },
    "Toast": {
-    "count": 348,
+    "count": 331,
     "ok": true
    },
    "Together AI": {
-    "count": 79,
+    "count": 77,
     "ok": true
    },
    "Turing": {
@@ -947,11 +947,11 @@
     "ok": true
    },
    "Twilio": {
-    "count": 108,
+    "count": 115,
     "ok": true
    },
    "Twitch": {
-    "count": 58,
+    "count": 51,
     "ok": true
    },
    "Typeface": {
@@ -959,7 +959,7 @@
     "ok": true
    },
    "UiPath": {
-    "count": 101,
+    "count": 98,
     "ok": true
    },
    "Vanta": {
@@ -971,31 +971,31 @@
     "ok": true
    },
    "Vercel": {
-    "count": 86,
+    "count": 87,
     "ok": true
    },
    "Verkada": {
-    "count": 343,
+    "count": 347,
     "ok": true
    },
    "Vertex Pharmaceuticals": {
-    "error": "POST https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs failed: 429 Client Error: Too Many Requests for url: https://vrtx.wd501.myworkdayjobs.com/wday/cxs/vrtx/Vertex_Careers/jobs",
-    "ok": false
+    "count": 252,
+    "ok": true
    },
    "Virtu": {
     "count": 45,
     "ok": true
    },
    "Waymo": {
-    "count": 372,
+    "count": 369,
     "ok": true
    },
    "Webflow": {
-    "count": 26,
+    "count": 28,
     "ok": true
    },
    "Whoop": {
-    "count": 112,
+    "count": 111,
     "ok": true
    },
    "Wise": {
@@ -1015,7 +1015,7 @@
     "ok": true
    },
    "Writer": {
-    "count": 45,
+    "count": 46,
     "ok": true
    },
    "Yahoo": {
@@ -1043,7 +1043,7 @@
     "ok": true
    },
    "Zscaler": {
-    "count": 378,
+    "count": 380,
     "ok": true
    },
    "eBay": {
@@ -1051,13 +1051,13 @@
     "ok": false
    },
    "xAI": {
-    "count": 297,
+    "count": 302,
     "ok": true
    }
   }
  },
  "last_digest": {
-  "uae": "2026-11-16",
+  "uae": "2026-11-17",
   "us": "2026-11-16"
  }
 }
